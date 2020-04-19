@@ -1,0 +1,9 @@
+<navigator url="/pages/search/index" hover-class="navigator-hover" open-type="navigate">
+	<view class="search">
+		<view class="search-input">
+			<icon type="search" size="16">
+			</icon>
+			搜索
+		</view>
+	</view>
+	</navigator>

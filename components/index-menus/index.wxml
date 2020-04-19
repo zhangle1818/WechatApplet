@@ -1,0 +1,8 @@
+<view class="menus">
+	<block wx:for="{{menus}}" wx:key="index">
+		<navigator open-type="switchTab"
+		class="navigator" url="{{item.navigator_url}}">
+    <image class="image" src="{{item.image_src}}"mode="aspectFill"></image>
+		</navigator>
+	</block>
+</view>

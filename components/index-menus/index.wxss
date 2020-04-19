@@ -1,0 +1,11 @@
+.menus {
+  padding: 20rpx 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.menus .image {
+  display: block;
+  width: 128rpx;
+  height: 140rpx;
+}

@@ -1,0 +1,8 @@
+<!-- 搜索 -->
+<common-search></common-search>
+<!-- 轮播图 -->
+<index-swiper banners="{{banners}}"></index-swiper>
+<!-- 菜单 -->
+<index-menus menus="{{menus}}"></index-menus>
+<!-- 楼层 -->
+<index-floor floor="{{floor}}"></index-floor>

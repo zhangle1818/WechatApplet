@@ -1,0 +1,23 @@
+<block wx:for="{{floor}}" wx:key="index">
+	<view class="floor">
+		<view class="floor_title">
+			<image src="{{item.floor_title.image_src}}"></image>
+		</view>
+
+		<view class="product_list">
+			<view class="list_left">
+				<navigator url="{{ite.product_list[0].navigator_url}}">
+					<image src="{{item.product_list[0].image_src}}" mode="aspectFill"></image>
+				</navigator>
+			</view>
+
+			<view class="list_right">
+				<block wx:for="{{item.product_list}}" wx:key="index" wx:if="{{index > 0}}">
+					<navigator url="{{item.navigator_url}}">
+						<image src="{{item.image_src}}"></image>
+					</navigator>
+				</block>
+			</view>
+		</view>
+	</view>
+</block>

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "common-search":"../../components/common-search/index",
+    "category-content":"../../components/category-content/index",
+    "category-menu":"../../components/category-menu/index"
+  }
+}

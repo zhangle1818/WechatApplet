@@ -1,0 +1,5 @@
+<common-search></common-search>
+<view class="category_container">
+	<category-menu class="category_menu" list="{{list}}"></category-menu>
+	<category-content class="category_content"></category-content>
+</view>
