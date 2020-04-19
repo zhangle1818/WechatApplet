@@ -1,12 +1,8 @@
 .search {
-  position: fixed;
-  top: 0;
-  left: 0;
   background: #ff2d4a;
   padding: 20rpx;
   width: 100%;
   box-sizing: border-box;
-  z-index: 999;
 }
 .search .search-input {
   background: #fff;

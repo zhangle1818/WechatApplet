@@ -1,0 +1,27 @@
+.menu {
+  width: 200rpx;
+  .menu-item {
+    height: 100rpx;
+    line-height: 100rpx;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+  }
+
+  .active {
+    background: #fff;
+    color: red;
+    position: relative;
+  }
+
+  .active::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 20rpx;
+    width: 4px;
+    height: 60rpx;
+    background: red;
+  }
+}

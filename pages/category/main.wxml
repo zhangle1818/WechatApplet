@@ -1,5 +1,27 @@
-<common-search></common-search>
-<view class="category_container">
-	<category-menu class="category_menu" list="{{list}}"></category-menu>
-	<category-content class="category_content"></category-content>
+<view class="category">
+	<common-search></common-search>
+	<view class="category_content">
+		<!-- 左侧 菜单 -->
+		<scroll-view scroll-y class="meun_list">
+			<block wx:for="{{list}}" wx:key="index">
+				<view class="menu_item {{current ===index ? 'active': ''}}" bindtap="handleindex" data-index="{{index}}">{{item.cat_name}}</view>
+			</block>
+
+		</scroll-view>
+		<!-- 右侧 内容 -->
+		<scroll-view scroll-y class="goods_content" scroll-top="{{scrollTop}}">
+			<block wx:for="{{list[current].children}}">
+				<view class="goods_group">
+					<view class="goods_title"><text>/</text>{{item.cat_name}}<text>/</text></view>
+					<view class="goods_content_wrap">
+						<navigator url="/pages/goods_list/index?query={{ item.cat_name }}" class="navigator" wx:for="{{item.children}}" wx:key="index">
+							<image mode="aspectFill" src="{{item.cat_icon}}"></image>
+							<view>{{item.cat_name}}</view>
+						</navigator>
+					</view>
+				</view>
+			</block>
+
+		</scroll-view>
+	</view>
 </view>
