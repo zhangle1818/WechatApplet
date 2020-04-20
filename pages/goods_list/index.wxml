@@ -1,0 +1,27 @@
+<view class="goods_list">
+	<common-search></common-search>
+
+	<!-- 菜单 -->
+	<view class="goods_list_title">
+		<block wx:for="{{goods_title}}" wx:key="index">
+			<view class="goods_title {{current === index ? 'goodsActive' : ''}}" bindtap="handleActiveIndex" data-index="{{index}}">
+				{{item}}
+			</view>
+		</block>
+	</view>
+
+	<!-- 商品列表 -->
+	<block wx:for="{{goods}}" wx:key="index">
+		<navigator>
+			<view class="goods_item">
+				<image class="goods_image" mode="aspectfill" src="{{item.goods_small_logo}}"></image>
+				<view class="goods-item-right">
+					<view class="goods_item_title">{{item.goods_name}}</view>
+					<view class="goods_price">￥{{item.goods_price}}</view>
+				</view>
+			</view>
+			</navigator>
+	</block>
+  <view class="loading" wx:if="{{hasMore}}">正在加载...</view>
+  <view class="loading" wx:if="{{!hasMore}}">我是有底线的...</view>
+</view>

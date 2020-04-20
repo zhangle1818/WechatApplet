@@ -21,9 +21,7 @@ Page({
       const { message } = res.data
       this.setData({
         list: message
-      })
-      console.log(this.data.list[this.data.current].children);
-      
+      }) 
     })
   },
   handleindex(e) {

@@ -1,8 +1,8 @@
 {
   "usingComponents": {
-    "common-search":"../../components/common-search/index",
-    "index-swiper":"../../components/index-swiper/index",
-    "index-menus":"../../components/index-menus/index",
-    "index-floor":"../../components/index-floor/index"
+    "common-search":"/components/common-search/index",
+    "index-swiper":"/components/index-swiper/index",
+    "index-menus":"/components/index-menus/index",
+    "index-floor":"/components/index-floor/index"
   }
 }

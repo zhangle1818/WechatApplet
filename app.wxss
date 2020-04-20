@@ -15,6 +15,5 @@ image{
 /* 设计稿 375px  */
 page{
   /* 默认字体大小  28rpx */
-  font-size: 32rpx;
-  color: #666;
+  font-size: 34rpx;
 }

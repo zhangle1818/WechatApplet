@@ -1,0 +1,59 @@
+.goods_list .goods_list_title {
+  display: flex;
+  justify-content: space-around;
+  font-size: 36rpx;
+  border-bottom: 1px solid #ddd;
+}
+.goods_list .goods_list_title .goods_title {
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+}
+.goods_list .goodsActive {
+  color: red;
+  position: relative;
+}
+.goods_list .goodsActive::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  height: 6rpx;
+  width: 100%;
+  background: red;
+}
+.goods_list .goods_item {
+  padding: 20rpx;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+}
+.goods_list .goods_item .goods_image {
+  width: 200rpx;
+  height: 200rpx;
+}
+.goods_list .goods_item .goods-item-right {
+  flex: 1;
+  padding-left: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.goods_list .goods_item .goods-item-right .goods_item_title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.goods_list .goods_item .goods_price {
+  color: red;
+  font-weight: bold;
+}
+.goods_list .loading {
+  padding: 20rpx;
+  color: #ccc;
+  text-align: center;
+  font-size: 14px;
+}

@@ -10,7 +10,7 @@
 		</scroll-view>
 		<!-- 右侧 内容 -->
 		<scroll-view scroll-y class="goods_content" scroll-top="{{scrollTop}}">
-			<block wx:for="{{list[current].children}}">
+			<block wx:for="{{list[current].children}}" wx:key="index">
 				<view class="goods_group">
 					<view class="goods_title"><text>/</text>{{item.cat_name}}<text>/</text></view>
 					<view class="goods_content_wrap">
