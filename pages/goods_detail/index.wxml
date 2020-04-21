@@ -1,0 +1,52 @@
+<view class="goods_dateil">
+
+	<!-- 轮播图 -->
+	<swiper class="swiper" indicator-dots autoplay>
+		<block wx:for="{{detail.pics}}" wx:key="index">
+			<swiper-item data-src="{{item.pics_big}}" bindtap="hamdlePreview">
+				<image class="detail_image" mode="aspectFill" src="{{item.pics_mid}}"></image>
+			</swiper-item>
+		</block>
+	</swiper>
+
+	<!-- 商品名称 -->
+	<view class="goods_info">
+		<!-- 价格 -->
+		<view class="goods_price">￥{{detail.goods_price}}</view>
+		<!-- 标题和收藏 -->
+		<view class="goods_title">
+			<view class="goods_title_left">{{detail.goods_name}}</view>
+			<view class="goods_title_right">
+				<view class="iconfont icon-shoucang"></view>
+				<text>收藏</text>
+			</view>
+		</view>
+		<view class="express">快递：免运费</view>
+	</view>
+
+	<!-- 商品详情, nodes相当于v-html的作用 -->
+	<rich-text class="richtext" nodes="{{detail.goods_introduce}}"></rich-text>
+
+
+	<!-- 底部 -->
+	<view class="dateil_footer">
+		<!-- 客服 -->
+		<view class="btn_primary">
+			<view class='iconfont icon-kefu'></view>
+			<view>联系客服</view>
+		</view>
+    <button open-type="contact" type="primary" class="contact">
+    打开微信原生客服回话</button>
+		<!-- 购物车 -->
+			<view class="cart" bindtap="handleTocart">
+				<view class='iconfont icon-gouwuche'></view>
+				<view>购物车</view>
+			</view>
+		<!-- 加入购物车 -->
+		<view class="addCart">加入购物车</view>
+		<!-- 立刻购买 -->
+		<view class="buyNow">立刻购买</view>
+	</view>
+
+
+</view>

@@ -51,9 +51,7 @@ Page({
         pagesize: this.data.pagesize
       }
     }).then(res => {
-      console.log(res);
       const { goods } = res.data.message;
-
       // 判断是否是最后一页
       if (goods.length < 10) {
         this.setData({

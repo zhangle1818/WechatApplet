@@ -1,19 +1,27 @@
+/**app.wxss**/
+@import "./common/style.wxss";
 
 /* wxss内不能放 *   */
-page,view,text,navigator,swiper,swiper-item,scroll-view{
+page,
+view,
+text,
+navigator,
+swiper,
+swiper-item,
+scroll-view {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-image{
+image {
   width: 100%;
   /* 3px 间隙 */
   display: block;
 }
 
 /* 设计稿 375px  */
-page{
+page {
   /* 默认字体大小  28rpx */
   font-size: 34rpx;
 }

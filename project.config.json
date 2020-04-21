@@ -67,7 +67,21 @@
 					"id": 1,
 					"name": "pages/goods_list/index",
 					"pathName": "pages/goods_list/index",
-					"query": "query=曲面电视",
+					"query": "query=三星",
+					"scene": null
+				},
+				{
+					"id": 2,
+					"name": "pages/goods_detail/index",
+					"pathName": "pages/goods_detail/index",
+					"query": "goods_id=57444",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/search/index",
+					"pathName": "pages/search/index",
+					"query": "goods_id=57444",
 					"scene": null
 				}
 			]

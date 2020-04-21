@@ -1,1 +1,54 @@
-/* pages/search/index.wxss */
+.serach_detail .serach_title {
+  padding: 20rpx;
+  display: flex;
+  background: #eee;
+}
+.serach_detail .serach_title .search-input {
+  flex: 1;
+  height: 60rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  border-radius: 10rpx;
+  padding: 0 20rpx;
+  margin-right: 20rpx;
+}
+.serach_detail .serach_title .search-input input {
+  flex: 1;
+  font-size: 34rpx;
+  padding-left: 10rpx;
+}
+.serach_detail .serach_title .cancel {
+  border: 1px #ddd solid;
+  width: 120rpx;
+  line-height: 56rpx;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 14px;
+  border-radius: 4px;
+}
+.serach_detail .search_history {
+  padding: 20rpx;
+}
+.serach_detail .search_history .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx;
+}
+.serach_detail .search_history .title view {
+  font-weight: bold;
+}
+.serach_detail .search_history .history_list {
+  padding: 20rpx;
+  display: flex;
+  flex-wrap: wrap;
+}
+.serach_detail .search_history .history_list .history_content {
+  padding: 10rpx 20rpx;
+  background: #eee;
+  margin: 10rpx 20rpx;
+  font-size: 14px;
+  border-radius: 10rpx;
+}
